@@ -4,4 +4,12 @@ This program is a two way translator between morse code and ascii using the Viva
 
 ## How to load onto your ZedBoard
 
+Make sure you have Vitis installed
 
+1. Clone or Download the repository
+
+`git clone https://github.com/OmarElGabry/chat.io.git`
+
+1. Item 2
+1. Item 3
+`<addr>` element here instead.
