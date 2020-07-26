@@ -10,7 +10,7 @@ Make sure you have Vitis installed
 
 `git clone https://github.com/j792lee/zedboard-morse-code-translator.git`
 
-1. Make a new project in Vitis
+2. Make a new project in Vitis
 
 1. Item 3
 `<addr>` element here instead.
