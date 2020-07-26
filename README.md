@@ -8,8 +8,9 @@ Make sure you have Vitis installed
 
 1. Clone or Download the repository
 
-`git clone https://github.com/OmarElGabry/chat.io.git`
+`git clone https://github.com/j792lee/zedboard-morse-code-translator.git`
 
-1. Item 2
+1. Make a new project in Vitis
+
 1. Item 3
 `<addr>` element here instead.
