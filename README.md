@@ -12,5 +12,7 @@ Make sure you have Vitis installed
 
 2. Make a new project in Vitis
 
+![Vitis new pro](./images/new_pro.png?raw=true "Title")
+
 1. Item 3
 `<addr>` element here instead.
