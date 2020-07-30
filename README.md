@@ -4,7 +4,7 @@ This program is a two way translator between morse code and ascii using the Viva
 
 ## How to load onto your ZedBoard
 
-Make sure you have Vitis installed
+Before you start, make sure you have Vitis installed
 
 1. Clone or Download the repository
 
@@ -14,5 +14,10 @@ Make sure you have Vitis installed
 
 ![Vitis new pro](./images/new_pro.png?raw=true "Title")
 
-1. Item 3
-`<addr>` element here instead.
+3. When asked for the platform, click on the "Create a new platform from hardware" tab and click on the '+'
+
+![XSA example](./images/xsa_show.png?raw=true "Title")
+
+4. Upload OLED_LED_BUTTON_design_wrapper.xsa from the xsa folder
+
+![XSA file](./images/files.png?raw=true "Title")
