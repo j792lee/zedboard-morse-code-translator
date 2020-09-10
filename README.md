@@ -27,3 +27,11 @@ Before you start, make sure you have Vitis installed and your Zedboard is turned
 6. Plug in the Zedboard using the j-tag input and launch the application oh hardwate
 
 ![launch on hardware](./images/launch_on_hardware.png?raw=true "Title")
+
+## Using the Morse code encoder
+
+First, select the "Encode" option on the main menu using the Zedboard's up and down d-pad buttons to move the arrow, and the middle d-pad button to select. Then, input the message you would like to be translated in a similar method, only with the right d-pad button to go to the next letter. When you are done inputting your message, press the middle button and your message should be displayed in morse code using the LEDs.
+
+## Using the Morse code decoder
+
+Select the "Decode" option on the main menu using the Zedboard's up and down d-pad buttons to move the arrow, and the middle d-pad button to select. Then, communicate in morse code as you would with a morse code transmitter. As you tap each letter, the corresponding letter should appear on the OLED display.
