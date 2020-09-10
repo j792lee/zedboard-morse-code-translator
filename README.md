@@ -26,4 +26,4 @@ Before you start, make sure you have Vitis installed and your Zedboard is turned
 
 6. Plug in the Zedboard using the j-tag input and launch the application oh hardwate
 
-![launch on hardware](./images/launch on hardware.png?raw=true "Title")
+![launch on hardware](./images/launch_on_hardware.png?raw=true "Title")
