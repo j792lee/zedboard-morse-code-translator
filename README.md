@@ -22,6 +22,8 @@ Before you start, make sure you have Vitis installed and your Zedboard is turned
 
 ![XSA file](./images/files.png?raw=true "Title")
 
-5. Finish creating the project then replace the default src folder with this project's src folder
+5. Finish creating the project then replace the default src folder with this project's src folder, then build the project
 
-6.
+6. Plug in the Zedboard using the j-tag input and launch the application oh hardwate
+
+![launch on hardware](./images/launch on hardware.png?raw=true "Title")
