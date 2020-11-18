@@ -1,0 +1,1333 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2.1 (lin64) Build 2729669 Thu Dec  5 04:48:12 MST 2019
+| Date         : Wed May 13 21:32:00 2020
+| Host         : justin-Strix-GL504GV-GL504GV running 64-bit Ubuntu 18.04.2 LTS
+| Command      : report_timing_summary -max_paths 10 -file OLED_LED_BUTTON_design_wrapper_timing_summary_routed.rpt -pb OLED_LED_BUTTON_design_wrapper_timing_summary_routed.pb -rpx OLED_LED_BUTTON_design_wrapper_timing_summary_routed.rpx -warn_on_violation
+| Design       : OLED_LED_BUTTON_design_wrapper
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 5 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 14 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      0.207        0.000                      0                 5766        0.038        0.000                      0                 5766        4.020        0.000                       0                  2288  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock       Waveform(ns)       Period(ns)      Frequency(MHz)
+-----       ------------       ----------      --------------
+clk_fpga_0  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk_fpga_0          0.207        0.000                      0                 5766        0.038        0.000                      0                 5766        4.020        0.000                       0                  2288  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_fpga_0
+  To Clock:  clk_fpga_0
+
+Setup :            0  Failing Endpoints,  Worst Slack        0.207ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.038ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.020ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.207ns  (required time - arrival time)
+  Source:                 OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[8]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        9.465ns  (logic 1.866ns (19.716%)  route 7.599ns (80.284%))
+  Logic Levels:           7  (LUT4=2 LUT5=1 LUT6=4)
+  Clock Path Skew:        -0.107ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.656ns = ( 12.656 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.992ns
+    Clock Pessimism Removal (CPR):    0.229ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        1.698     2.992    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X30Y57         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X30Y57         FDRE (Prop_fdre_C_Q)         0.518     3.510 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[4]/Q
+                         net (fo=80, routed)          1.980     5.490    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[4]
+    SLICE_X38Y59         LUT4 (Prop_lut4_I1_O)        0.150     5.640 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_152/O
+                         net (fo=1, routed)           0.739     6.380    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_152_n_0
+    SLICE_X40Y57         LUT6 (Prop_lut6_I4_O)        0.328     6.708 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_30/O
+                         net (fo=2, routed)           0.741     7.449    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_30_n_0
+    SLICE_X45Y57         LUT4 (Prop_lut4_I2_O)        0.124     7.573 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_41/O
+                         net (fo=1, routed)           0.805     8.377    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_41_n_0
+    SLICE_X41Y58         LUT6 (Prop_lut6_I3_O)        0.124     8.501 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_8/O
+                         net (fo=2, routed)           0.817     9.318    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_8_n_0
+    SLICE_X41Y58         LUT6 (Prop_lut6_I2_O)        0.124     9.442 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_2/O
+                         net (fo=61, routed)          1.040    10.482    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_2_n_0
+    SLICE_X34Y59         LUT5 (Prop_lut5_I1_O)        0.150    10.632 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[72]_i_2/O
+                         net (fo=10, routed)          0.884    11.515    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[72]_i_2_n_0
+    SLICE_X33Y60         LUT6 (Prop_lut6_I1_O)        0.348    11.863 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[8]_i_1/O
+                         net (fo=1, routed)           0.593    12.457    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[8]_i_1_n_0
+    SLICE_X33Y60         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[8]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        1.477    12.656    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X33Y60         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[8]/C
+                         clock pessimism              0.229    12.885    
+                         clock uncertainty           -0.154    12.731    
+    SLICE_X33Y60         FDRE (Setup_fdre_C_D)       -0.067    12.664    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[8]
+  -------------------------------------------------------------------
+                         required time                         12.664    
+                         arrival time                         -12.457    
+  -------------------------------------------------------------------
+                         slack                                  0.207    
+
+Slack (MET) :             0.305ns  (required time - arrival time)
+  Source:                 OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[33]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        9.444ns  (logic 1.616ns (17.112%)  route 7.828ns (82.888%))
+  Logic Levels:           7  (LUT4=2 LUT5=1 LUT6=4)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.702ns = ( 12.702 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.992ns
+    Clock Pessimism Removal (CPR):    0.264ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        1.698     2.992    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X30Y57         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X30Y57         FDRE (Prop_fdre_C_Q)         0.518     3.510 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[4]/Q
+                         net (fo=80, routed)          1.980     5.490    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[4]
+    SLICE_X38Y59         LUT4 (Prop_lut4_I1_O)        0.150     5.640 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_152/O
+                         net (fo=1, routed)           0.739     6.380    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_152_n_0
+    SLICE_X40Y57         LUT6 (Prop_lut6_I4_O)        0.328     6.708 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_30/O
+                         net (fo=2, routed)           0.741     7.449    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_30_n_0
+    SLICE_X45Y57         LUT4 (Prop_lut4_I2_O)        0.124     7.573 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_41/O
+                         net (fo=1, routed)           0.805     8.377    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_41_n_0
+    SLICE_X41Y58         LUT6 (Prop_lut6_I3_O)        0.124     8.501 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_8/O
+                         net (fo=2, routed)           0.817     9.318    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_8_n_0
+    SLICE_X41Y58         LUT6 (Prop_lut6_I2_O)        0.124     9.442 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_2/O
+                         net (fo=61, routed)          1.121    10.563    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_2_n_0
+    SLICE_X35Y59         LUT5 (Prop_lut5_I0_O)        0.124    10.687 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[78]_i_2/O
+                         net (fo=5, routed)           1.230    11.917    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[78]_i_2_n_0
+    SLICE_X28Y59         LUT6 (Prop_lut6_I2_O)        0.124    12.041 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[33]_i_1/O
+                         net (fo=1, routed)           0.395    12.436    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[33]_i_1_n_0
+    SLICE_X31Y59         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[33]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        1.523    12.702    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X31Y59         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[33]/C
+                         clock pessimism              0.264    12.966    
+                         clock uncertainty           -0.154    12.812    
+    SLICE_X31Y59         FDRE (Setup_fdre_C_D)       -0.071    12.741    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[33]
+  -------------------------------------------------------------------
+                         required time                         12.741    
+                         arrival time                         -12.436    
+  -------------------------------------------------------------------
+                         slack                                  0.305    
+
+Slack (MET) :             0.323ns  (required time - arrival time)
+  Source:                 OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[16]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[2][7][4]/R
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        8.898ns  (logic 1.436ns (16.139%)  route 7.462ns (83.861%))
+  Logic Levels:           6  (LUT2=1 LUT4=1 LUT6=4)
+  Clock Path Skew:        -0.101ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.714ns = ( 12.714 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.944ns
+    Clock Pessimism Removal (CPR):    0.129ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        1.650     2.944    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X33Y59         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[16]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X33Y59         FDRE (Prop_fdre_C_Q)         0.456     3.400 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[16]/Q
+                         net (fo=39, routed)          1.407     4.807    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[16]
+    SLICE_X41Y61         LUT4 (Prop_lut4_I1_O)        0.152     4.959 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/temp_index[3]_i_21/O
+                         net (fo=3, routed)           1.211     6.170    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/temp_index[3]_i_21_n_0
+    SLICE_X46Y64         LUT6 (Prop_lut6_I3_O)        0.332     6.502 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_23/O
+                         net (fo=1, routed)           0.778     7.280    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_23_n_0
+    SLICE_X47Y59         LUT6 (Prop_lut6_I4_O)        0.124     7.404 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_13/O
+                         net (fo=1, routed)           0.729     8.132    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_13_n_0
+    SLICE_X47Y62         LUT6 (Prop_lut6_I0_O)        0.124     8.256 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_6/O
+                         net (fo=1, routed)           0.481     8.738    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_6_n_0
+    SLICE_X47Y63         LUT6 (Prop_lut6_I5_O)        0.124     8.862 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_2/O
+                         net (fo=513, routed)         1.325    10.186    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_2_n_0
+    SLICE_X42Y76         LUT2 (Prop_lut2_I0_O)        0.124    10.310 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_1/O
+                         net (fo=512, routed)         1.532    11.842    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_1_n_0
+    SLICE_X54Y91         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[2][7][4]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        1.535    12.714    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X54Y91         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[2][7][4]/C
+                         clock pessimism              0.129    12.843    
+                         clock uncertainty           -0.154    12.689    
+    SLICE_X54Y91         FDRE (Setup_fdre_C_R)       -0.524    12.165    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[2][7][4]
+  -------------------------------------------------------------------
+                         required time                         12.165    
+                         arrival time                         -11.842    
+  -------------------------------------------------------------------
+                         slack                                  0.323    
+
+Slack (MET) :             0.323ns  (required time - arrival time)
+  Source:                 OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[16]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][6][4]/R
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        8.898ns  (logic 1.436ns (16.139%)  route 7.462ns (83.861%))
+  Logic Levels:           6  (LUT2=1 LUT4=1 LUT6=4)
+  Clock Path Skew:        -0.101ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.714ns = ( 12.714 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.944ns
+    Clock Pessimism Removal (CPR):    0.129ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        1.650     2.944    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X33Y59         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[16]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X33Y59         FDRE (Prop_fdre_C_Q)         0.456     3.400 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[16]/Q
+                         net (fo=39, routed)          1.407     4.807    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[16]
+    SLICE_X41Y61         LUT4 (Prop_lut4_I1_O)        0.152     4.959 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/temp_index[3]_i_21/O
+                         net (fo=3, routed)           1.211     6.170    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/temp_index[3]_i_21_n_0
+    SLICE_X46Y64         LUT6 (Prop_lut6_I3_O)        0.332     6.502 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_23/O
+                         net (fo=1, routed)           0.778     7.280    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_23_n_0
+    SLICE_X47Y59         LUT6 (Prop_lut6_I4_O)        0.124     7.404 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_13/O
+                         net (fo=1, routed)           0.729     8.132    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_13_n_0
+    SLICE_X47Y62         LUT6 (Prop_lut6_I0_O)        0.124     8.256 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_6/O
+                         net (fo=1, routed)           0.481     8.738    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_6_n_0
+    SLICE_X47Y63         LUT6 (Prop_lut6_I5_O)        0.124     8.862 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_2/O
+                         net (fo=513, routed)         1.325    10.186    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_2_n_0
+    SLICE_X42Y76         LUT2 (Prop_lut2_I0_O)        0.124    10.310 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_1/O
+                         net (fo=512, routed)         1.532    11.842    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_1_n_0
+    SLICE_X54Y91         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][6][4]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        1.535    12.714    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X54Y91         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][6][4]/C
+                         clock pessimism              0.129    12.843    
+                         clock uncertainty           -0.154    12.689    
+    SLICE_X54Y91         FDRE (Setup_fdre_C_R)       -0.524    12.165    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][6][4]
+  -------------------------------------------------------------------
+                         required time                         12.165    
+                         arrival time                         -11.842    
+  -------------------------------------------------------------------
+                         slack                                  0.323    
+
+Slack (MET) :             0.406ns  (required time - arrival time)
+  Source:                 OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[32]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        9.289ns  (logic 1.866ns (20.089%)  route 7.423ns (79.911%))
+  Logic Levels:           7  (LUT4=2 LUT5=1 LUT6=4)
+  Clock Path Skew:        -0.106ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.657ns = ( 12.657 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.992ns
+    Clock Pessimism Removal (CPR):    0.229ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        1.698     2.992    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X30Y57         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X30Y57         FDRE (Prop_fdre_C_Q)         0.518     3.510 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[4]/Q
+                         net (fo=80, routed)          1.980     5.490    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[4]
+    SLICE_X38Y59         LUT4 (Prop_lut4_I1_O)        0.150     5.640 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_152/O
+                         net (fo=1, routed)           0.739     6.380    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_152_n_0
+    SLICE_X40Y57         LUT6 (Prop_lut6_I4_O)        0.328     6.708 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_30/O
+                         net (fo=2, routed)           0.741     7.449    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_30_n_0
+    SLICE_X45Y57         LUT4 (Prop_lut4_I2_O)        0.124     7.573 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_41/O
+                         net (fo=1, routed)           0.805     8.377    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_41_n_0
+    SLICE_X41Y58         LUT6 (Prop_lut6_I3_O)        0.124     8.501 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_8/O
+                         net (fo=2, routed)           0.817     9.318    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_8_n_0
+    SLICE_X41Y58         LUT6 (Prop_lut6_I2_O)        0.124     9.442 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_2/O
+                         net (fo=61, routed)          1.040    10.482    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_2_n_0
+    SLICE_X34Y59         LUT5 (Prop_lut5_I1_O)        0.150    10.632 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[72]_i_2/O
+                         net (fo=10, routed)          0.969    11.601    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[72]_i_2_n_0
+    SLICE_X34Y59         LUT6 (Prop_lut6_I2_O)        0.348    11.949 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[32]_i_1/O
+                         net (fo=1, routed)           0.332    12.281    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[32]_i_1_n_0
+    SLICE_X34Y59         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[32]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        1.478    12.657    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X34Y59         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[32]/C
+                         clock pessimism              0.229    12.886    
+                         clock uncertainty           -0.154    12.732    
+    SLICE_X34Y59         FDRE (Setup_fdre_C_D)       -0.045    12.687    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[32]
+  -------------------------------------------------------------------
+                         required time                         12.687    
+                         arrival time                         -12.281    
+  -------------------------------------------------------------------
+                         slack                                  0.406    
+
+Slack (MET) :             0.438ns  (required time - arrival time)
+  Source:                 OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[16]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[0][7][0]/R
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        8.808ns  (logic 1.436ns (16.302%)  route 7.372ns (83.698%))
+  Logic Levels:           6  (LUT2=1 LUT4=1 LUT6=4)
+  Clock Path Skew:        -0.170ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.645ns = ( 12.645 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.944ns
+    Clock Pessimism Removal (CPR):    0.129ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        1.650     2.944    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X33Y59         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[16]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X33Y59         FDRE (Prop_fdre_C_Q)         0.456     3.400 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[16]/Q
+                         net (fo=39, routed)          1.407     4.807    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[16]
+    SLICE_X41Y61         LUT4 (Prop_lut4_I1_O)        0.152     4.959 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/temp_index[3]_i_21/O
+                         net (fo=3, routed)           1.211     6.170    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/temp_index[3]_i_21_n_0
+    SLICE_X46Y64         LUT6 (Prop_lut6_I3_O)        0.332     6.502 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_23/O
+                         net (fo=1, routed)           0.778     7.280    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_23_n_0
+    SLICE_X47Y59         LUT6 (Prop_lut6_I4_O)        0.124     7.404 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_13/O
+                         net (fo=1, routed)           0.729     8.132    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_13_n_0
+    SLICE_X47Y62         LUT6 (Prop_lut6_I0_O)        0.124     8.256 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_6/O
+                         net (fo=1, routed)           0.481     8.738    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_6_n_0
+    SLICE_X47Y63         LUT6 (Prop_lut6_I5_O)        0.124     8.862 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_2/O
+                         net (fo=513, routed)         1.325    10.186    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_2_n_0
+    SLICE_X42Y76         LUT2 (Prop_lut2_I0_O)        0.124    10.310 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_1/O
+                         net (fo=512, routed)         1.442    11.752    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_1_n_0
+    SLICE_X51Y94         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[0][7][0]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        1.466    12.645    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X51Y94         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[0][7][0]/C
+                         clock pessimism              0.129    12.774    
+                         clock uncertainty           -0.154    12.620    
+    SLICE_X51Y94         FDRE (Setup_fdre_C_R)       -0.429    12.191    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[0][7][0]
+  -------------------------------------------------------------------
+                         required time                         12.191    
+                         arrival time                         -11.752    
+  -------------------------------------------------------------------
+                         slack                                  0.438    
+
+Slack (MET) :             0.438ns  (required time - arrival time)
+  Source:                 OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[16]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[2][15][0]/R
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        8.808ns  (logic 1.436ns (16.302%)  route 7.372ns (83.698%))
+  Logic Levels:           6  (LUT2=1 LUT4=1 LUT6=4)
+  Clock Path Skew:        -0.170ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.645ns = ( 12.645 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.944ns
+    Clock Pessimism Removal (CPR):    0.129ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        1.650     2.944    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X33Y59         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[16]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X33Y59         FDRE (Prop_fdre_C_Q)         0.456     3.400 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[16]/Q
+                         net (fo=39, routed)          1.407     4.807    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[16]
+    SLICE_X41Y61         LUT4 (Prop_lut4_I1_O)        0.152     4.959 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/temp_index[3]_i_21/O
+                         net (fo=3, routed)           1.211     6.170    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/temp_index[3]_i_21_n_0
+    SLICE_X46Y64         LUT6 (Prop_lut6_I3_O)        0.332     6.502 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_23/O
+                         net (fo=1, routed)           0.778     7.280    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_23_n_0
+    SLICE_X47Y59         LUT6 (Prop_lut6_I4_O)        0.124     7.404 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_13/O
+                         net (fo=1, routed)           0.729     8.132    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_13_n_0
+    SLICE_X47Y62         LUT6 (Prop_lut6_I0_O)        0.124     8.256 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_6/O
+                         net (fo=1, routed)           0.481     8.738    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_6_n_0
+    SLICE_X47Y63         LUT6 (Prop_lut6_I5_O)        0.124     8.862 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_2/O
+                         net (fo=513, routed)         1.325    10.186    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_2_n_0
+    SLICE_X42Y76         LUT2 (Prop_lut2_I0_O)        0.124    10.310 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_1/O
+                         net (fo=512, routed)         1.442    11.752    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_1_n_0
+    SLICE_X51Y94         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[2][15][0]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        1.466    12.645    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X51Y94         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[2][15][0]/C
+                         clock pessimism              0.129    12.774    
+                         clock uncertainty           -0.154    12.620    
+    SLICE_X51Y94         FDRE (Setup_fdre_C_R)       -0.429    12.191    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[2][15][0]
+  -------------------------------------------------------------------
+                         required time                         12.191    
+                         arrival time                         -11.752    
+  -------------------------------------------------------------------
+                         slack                                  0.438    
+
+Slack (MET) :             0.438ns  (required time - arrival time)
+  Source:                 OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[16]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[2][7][0]/R
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        8.808ns  (logic 1.436ns (16.302%)  route 7.372ns (83.698%))
+  Logic Levels:           6  (LUT2=1 LUT4=1 LUT6=4)
+  Clock Path Skew:        -0.170ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.645ns = ( 12.645 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.944ns
+    Clock Pessimism Removal (CPR):    0.129ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        1.650     2.944    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X33Y59         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[16]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X33Y59         FDRE (Prop_fdre_C_Q)         0.456     3.400 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[16]/Q
+                         net (fo=39, routed)          1.407     4.807    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[16]
+    SLICE_X41Y61         LUT4 (Prop_lut4_I1_O)        0.152     4.959 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/temp_index[3]_i_21/O
+                         net (fo=3, routed)           1.211     6.170    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/temp_index[3]_i_21_n_0
+    SLICE_X46Y64         LUT6 (Prop_lut6_I3_O)        0.332     6.502 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_23/O
+                         net (fo=1, routed)           0.778     7.280    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_23_n_0
+    SLICE_X47Y59         LUT6 (Prop_lut6_I4_O)        0.124     7.404 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_13/O
+                         net (fo=1, routed)           0.729     8.132    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_13_n_0
+    SLICE_X47Y62         LUT6 (Prop_lut6_I0_O)        0.124     8.256 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_6/O
+                         net (fo=1, routed)           0.481     8.738    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_6_n_0
+    SLICE_X47Y63         LUT6 (Prop_lut6_I5_O)        0.124     8.862 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_2/O
+                         net (fo=513, routed)         1.325    10.186    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_2_n_0
+    SLICE_X42Y76         LUT2 (Prop_lut2_I0_O)        0.124    10.310 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_1/O
+                         net (fo=512, routed)         1.442    11.752    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_1_n_0
+    SLICE_X51Y94         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[2][7][0]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        1.466    12.645    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X51Y94         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[2][7][0]/C
+                         clock pessimism              0.129    12.774    
+                         clock uncertainty           -0.154    12.620    
+    SLICE_X51Y94         FDRE (Setup_fdre_C_R)       -0.429    12.191    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[2][7][0]
+  -------------------------------------------------------------------
+                         required time                         12.191    
+                         arrival time                         -11.752    
+  -------------------------------------------------------------------
+                         slack                                  0.438    
+
+Slack (MET) :             0.438ns  (required time - arrival time)
+  Source:                 OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[16]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][15][0]/R
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        8.808ns  (logic 1.436ns (16.302%)  route 7.372ns (83.698%))
+  Logic Levels:           6  (LUT2=1 LUT4=1 LUT6=4)
+  Clock Path Skew:        -0.170ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.645ns = ( 12.645 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.944ns
+    Clock Pessimism Removal (CPR):    0.129ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        1.650     2.944    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X33Y59         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[16]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X33Y59         FDRE (Prop_fdre_C_Q)         0.456     3.400 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[16]/Q
+                         net (fo=39, routed)          1.407     4.807    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[16]
+    SLICE_X41Y61         LUT4 (Prop_lut4_I1_O)        0.152     4.959 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/temp_index[3]_i_21/O
+                         net (fo=3, routed)           1.211     6.170    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/temp_index[3]_i_21_n_0
+    SLICE_X46Y64         LUT6 (Prop_lut6_I3_O)        0.332     6.502 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_23/O
+                         net (fo=1, routed)           0.778     7.280    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_23_n_0
+    SLICE_X47Y59         LUT6 (Prop_lut6_I4_O)        0.124     7.404 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_13/O
+                         net (fo=1, routed)           0.729     8.132    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_13_n_0
+    SLICE_X47Y62         LUT6 (Prop_lut6_I0_O)        0.124     8.256 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_6/O
+                         net (fo=1, routed)           0.481     8.738    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_6_n_0
+    SLICE_X47Y63         LUT6 (Prop_lut6_I5_O)        0.124     8.862 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_2/O
+                         net (fo=513, routed)         1.325    10.186    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_2_n_0
+    SLICE_X42Y76         LUT2 (Prop_lut2_I0_O)        0.124    10.310 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_1/O
+                         net (fo=512, routed)         1.442    11.752    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_1_n_0
+    SLICE_X51Y94         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][15][0]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        1.466    12.645    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X51Y94         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][15][0]/C
+                         clock pessimism              0.129    12.774    
+                         clock uncertainty           -0.154    12.620    
+    SLICE_X51Y94         FDRE (Setup_fdre_C_R)       -0.429    12.191    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][15][0]
+  -------------------------------------------------------------------
+                         required time                         12.191    
+                         arrival time                         -11.752    
+  -------------------------------------------------------------------
+                         slack                                  0.438    
+
+Slack (MET) :             0.438ns  (required time - arrival time)
+  Source:                 OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[16]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][7][0]/R
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        8.808ns  (logic 1.436ns (16.302%)  route 7.372ns (83.698%))
+  Logic Levels:           6  (LUT2=1 LUT4=1 LUT6=4)
+  Clock Path Skew:        -0.170ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.645ns = ( 12.645 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.944ns
+    Clock Pessimism Removal (CPR):    0.129ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        1.650     2.944    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X33Y59         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[16]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X33Y59         FDRE (Prop_fdre_C_Q)         0.456     3.400 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[16]/Q
+                         net (fo=39, routed)          1.407     4.807    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[16]
+    SLICE_X41Y61         LUT4 (Prop_lut4_I1_O)        0.152     4.959 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/temp_index[3]_i_21/O
+                         net (fo=3, routed)           1.211     6.170    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/temp_index[3]_i_21_n_0
+    SLICE_X46Y64         LUT6 (Prop_lut6_I3_O)        0.332     6.502 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_23/O
+                         net (fo=1, routed)           0.778     7.280    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_23_n_0
+    SLICE_X47Y59         LUT6 (Prop_lut6_I4_O)        0.124     7.404 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_13/O
+                         net (fo=1, routed)           0.729     8.132    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_13_n_0
+    SLICE_X47Y62         LUT6 (Prop_lut6_I0_O)        0.124     8.256 f  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_6/O
+                         net (fo=1, routed)           0.481     8.738    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_6_n_0
+    SLICE_X47Y63         LUT6 (Prop_lut6_I5_O)        0.124     8.862 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_2/O
+                         net (fo=513, routed)         1.325    10.186    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_2_n_0
+    SLICE_X42Y76         LUT2 (Prop_lut2_I0_O)        0.124    10.310 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_1/O
+                         net (fo=512, routed)         1.442    11.752    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen[3][0][7]_i_1_n_0
+    SLICE_X51Y94         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][7][0]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        1.466    12.645    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X51Y94         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][7][0]/C
+                         clock pessimism              0.129    12.774    
+                         clock uncertainty           -0.154    12.620    
+    SLICE_X51Y94         FDRE (Setup_fdre_C_R)       -0.429    12.191    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][7][0]
+  -------------------------------------------------------------------
+                         required time                         12.191    
+                         arrival time                         -11.752    
+  -------------------------------------------------------------------
+                         slack                                  0.438    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.038ns  (arrival time - required time)
+  Source:                 OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg3_reg[28]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[0][15][4]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.363ns  (logic 0.141ns (38.819%)  route 0.222ns (61.181%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.259ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.185ns
+    Source Clock Delay      (SCD):    0.891ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        0.555     0.891    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X49Y93         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg3_reg[28]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X49Y93         FDRE (Prop_fdre_C_Q)         0.141     1.032 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg3_reg[28]/Q
+                         net (fo=2, routed)           0.222     1.254    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg3[28]
+    SLICE_X51Y90         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[0][15][4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        0.819     1.185    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X51Y90         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[0][15][4]/C
+                         clock pessimism             -0.035     1.150    
+    SLICE_X51Y90         FDRE (Hold_fdre_C_D)         0.066     1.216    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[0][15][4]
+  -------------------------------------------------------------------
+                         required time                         -1.216    
+                         arrival time                           1.254    
+  -------------------------------------------------------------------
+                         slack                                  0.038    
+
+Slack (MET) :             0.041ns  (arrival time - required time)
+  Source:                 OLED_LED_BUTTON_design_i/axi_gpio_0/U0/gpio_core_1/Not_Dual.gpio_Data_In_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            OLED_LED_BUTTON_design_i/axi_gpio_0/U0/gpio_core_1/Not_Dual.ALLIN1_ND.READ_REG_GEN[0].reg1_reg[27]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.313ns  (logic 0.186ns (59.494%)  route 0.127ns (40.506%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.181ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.191ns
+    Source Clock Delay      (SCD):    0.975ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        0.639     0.975    OLED_LED_BUTTON_design_i/axi_gpio_0/U0/gpio_core_1/s_axi_aclk
+    SLICE_X43Y100        FDRE                                         r  OLED_LED_BUTTON_design_i/axi_gpio_0/U0/gpio_core_1/Not_Dual.gpio_Data_In_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y100        FDRE (Prop_fdre_C_Q)         0.141     1.116 r  OLED_LED_BUTTON_design_i/axi_gpio_0/U0/gpio_core_1/Not_Dual.gpio_Data_In_reg[0]/Q
+                         net (fo=1, routed)           0.127     1.243    OLED_LED_BUTTON_design_i/axi_gpio_0/U0/gpio_core_1/gpio_Data_In[0]
+    SLICE_X41Y99         LUT5 (Prop_lut5_I0_O)        0.045     1.288 r  OLED_LED_BUTTON_design_i/axi_gpio_0/U0/gpio_core_1/Not_Dual.ALLIN1_ND.READ_REG_GEN[0].reg1[27]_i_1/O
+                         net (fo=1, routed)           0.000     1.288    OLED_LED_BUTTON_design_i/axi_gpio_0/U0/gpio_core_1/Read_Reg_In[0]
+    SLICE_X41Y99         FDRE                                         r  OLED_LED_BUTTON_design_i/axi_gpio_0/U0/gpio_core_1/Not_Dual.ALLIN1_ND.READ_REG_GEN[0].reg1_reg[27]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        0.825     1.191    OLED_LED_BUTTON_design_i/axi_gpio_0/U0/gpio_core_1/s_axi_aclk
+    SLICE_X41Y99         FDRE                                         r  OLED_LED_BUTTON_design_i/axi_gpio_0/U0/gpio_core_1/Not_Dual.ALLIN1_ND.READ_REG_GEN[0].reg1_reg[27]/C
+                         clock pessimism             -0.035     1.156    
+    SLICE_X41Y99         FDRE (Hold_fdre_C_D)         0.091     1.247    OLED_LED_BUTTON_design_i/axi_gpio_0/U0/gpio_core_1/Not_Dual.ALLIN1_ND.READ_REG_GEN[0].reg1_reg[27]
+  -------------------------------------------------------------------
+                         required time                         -1.247    
+                         arrival time                           1.288    
+  -------------------------------------------------------------------
+                         slack                                  0.041    
+
+Slack (MET) :             0.042ns  (arrival time - required time)
+  Source:                 OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_arid_r_reg[8]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][9]_srl32/D
+                            (rising edge-triggered cell SRLC32E clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.257ns  (logic 0.141ns (54.785%)  route 0.116ns (45.215%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.032ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.204ns
+    Source Clock Delay      (SCD):    0.908ns
+    Clock Pessimism Removal (CPR):    0.264ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        0.572     0.908    OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/aclk
+    SLICE_X29Y86         FDRE                                         r  OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_arid_r_reg[8]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X29Y86         FDRE (Prop_fdre_C_Q)         0.141     1.049 r  OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_arid_r_reg[8]/Q
+                         net (fo=1, routed)           0.116     1.165    OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/in[9]
+    SLICE_X26Y86         SRLC32E                                      r  OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][9]_srl32/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        0.838     1.204    OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/aclk
+    SLICE_X26Y86         SRLC32E                                      r  OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][9]_srl32/CLK
+                         clock pessimism             -0.264     0.940    
+    SLICE_X26Y86         SRLC32E (Hold_srlc32e_CLK_D)
+                                                      0.183     1.123    OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][9]_srl32
+  -------------------------------------------------------------------
+                         required time                         -1.123    
+                         arrival time                           1.165    
+  -------------------------------------------------------------------
+                         slack                                  0.042    
+
+Slack (MET) :             0.044ns  (arrival time - required time)
+  Source:                 OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg1_reg[27]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[0][7][3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.367ns  (logic 0.141ns (38.442%)  route 0.226ns (61.558%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.259ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.185ns
+    Source Clock Delay      (SCD):    0.891ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        0.555     0.891    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X48Y93         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg1_reg[27]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X48Y93         FDRE (Prop_fdre_C_Q)         0.141     1.032 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg1_reg[27]/Q
+                         net (fo=2, routed)           0.226     1.257    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg1[27]
+    SLICE_X50Y90         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[0][7][3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        0.819     1.185    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X50Y90         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[0][7][3]/C
+                         clock pessimism             -0.035     1.150    
+    SLICE_X50Y90         FDRE (Hold_fdre_C_D)         0.063     1.213    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[0][7][3]
+  -------------------------------------------------------------------
+                         required time                         -1.213    
+                         arrival time                           1.257    
+  -------------------------------------------------------------------
+                         slack                                  0.044    
+
+Slack (MET) :             0.045ns  (arrival time - required time)
+  Source:                 OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg14_reg[28]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][11][4]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.380ns  (logic 0.141ns (37.108%)  route 0.239ns (62.892%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.259ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.185ns
+    Source Clock Delay      (SCD):    0.891ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        0.555     0.891    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X49Y96         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg14_reg[28]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X49Y96         FDRE (Prop_fdre_C_Q)         0.141     1.032 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg14_reg[28]/Q
+                         net (fo=2, routed)           0.239     1.271    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg14[28]
+    SLICE_X51Y92         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][11][4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        0.819     1.185    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X51Y92         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][11][4]/C
+                         clock pessimism             -0.035     1.150    
+    SLICE_X51Y92         FDRE (Hold_fdre_C_D)         0.076     1.226    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][11][4]
+  -------------------------------------------------------------------
+                         required time                         -1.226    
+                         arrival time                           1.271    
+  -------------------------------------------------------------------
+                         slack                                  0.045    
+
+Slack (MET) :             0.046ns  (arrival time - required time)
+  Source:                 OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg12_reg[11]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][1][3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.366ns  (logic 0.141ns (38.550%)  route 0.225ns (61.450%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.256ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.173ns
+    Source Clock Delay      (SCD):    0.882ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        0.546     0.882    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X48Y79         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg12_reg[11]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X48Y79         FDRE (Prop_fdre_C_Q)         0.141     1.023 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg12_reg[11]/Q
+                         net (fo=2, routed)           0.225     1.247    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/data0[3]
+    SLICE_X50Y77         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][1][3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        0.807     1.173    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X50Y77         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][1][3]/C
+                         clock pessimism             -0.035     1.138    
+    SLICE_X50Y77         FDRE (Hold_fdre_C_D)         0.063     1.201    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][1][3]
+  -------------------------------------------------------------------
+                         required time                         -1.201    
+                         arrival time                           1.247    
+  -------------------------------------------------------------------
+                         slack                                  0.046    
+
+Slack (MET) :             0.047ns  (arrival time - required time)
+  Source:                 OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg15_reg[24]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][15][0]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.378ns  (logic 0.141ns (37.319%)  route 0.237ns (62.681%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.259ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.186ns
+    Source Clock Delay      (SCD):    0.892ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        0.556     0.892    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X47Y93         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg15_reg[24]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X47Y93         FDRE (Prop_fdre_C_Q)         0.141     1.033 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg15_reg[24]/Q
+                         net (fo=2, routed)           0.237     1.269    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg15[24]
+    SLICE_X51Y94         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][15][0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        0.820     1.186    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X51Y94         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][15][0]/C
+                         clock pessimism             -0.035     1.151    
+    SLICE_X51Y94         FDRE (Hold_fdre_C_D)         0.072     1.223    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][15][0]
+  -------------------------------------------------------------------
+                         required time                         -1.223    
+                         arrival time                           1.269    
+  -------------------------------------------------------------------
+                         slack                                  0.047    
+
+Slack (MET) :             0.047ns  (arrival time - required time)
+  Source:                 OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg13_reg[27]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][7][3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.368ns  (logic 0.164ns (44.561%)  route 0.204ns (55.439%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.257ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.184ns
+    Source Clock Delay      (SCD):    0.892ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        0.556     0.892    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X46Y93         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg13_reg[27]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X46Y93         FDRE (Prop_fdre_C_Q)         0.164     1.056 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg13_reg[27]/Q
+                         net (fo=2, routed)           0.204     1.260    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg13[27]
+    SLICE_X50Y88         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][7][3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        0.818     1.184    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X50Y88         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][7][3]/C
+                         clock pessimism             -0.035     1.149    
+    SLICE_X50Y88         FDRE (Hold_fdre_C_D)         0.064     1.213    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][7][3]
+  -------------------------------------------------------------------
+                         required time                         -1.213    
+                         arrival time                           1.260    
+  -------------------------------------------------------------------
+                         slack                                  0.047    
+
+Slack (MET) :             0.055ns  (arrival time - required time)
+  Source:                 OLED_LED_BUTTON_design_i/ps7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg[12]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][9]_srl32/D
+                            (rising edge-triggered cell SRLC32E clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.251ns  (logic 0.141ns (56.174%)  route 0.110ns (43.826%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.187ns
+    Source Clock Delay      (SCD):    0.891ns
+    Clock Pessimism Removal (CPR):    0.283ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        0.555     0.891    OLED_LED_BUTTON_design_i/ps7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/reg_slice_r/aclk
+    SLICE_X35Y87         FDRE                                         r  OLED_LED_BUTTON_design_i/ps7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg[12]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y87         FDRE (Prop_fdre_C_Q)         0.141     1.032 r  OLED_LED_BUTTON_design_i/ps7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg[12]/Q
+                         net (fo=1, routed)           0.110     1.142    OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/in[9]
+    SLICE_X34Y87         SRLC32E                                      r  OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][9]_srl32/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        0.821     1.187    OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/aclk
+    SLICE_X34Y87         SRLC32E                                      r  OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][9]_srl32/CLK
+                         clock pessimism             -0.283     0.904    
+    SLICE_X34Y87         SRLC32E (Hold_srlc32e_CLK_D)
+                                                      0.183     1.087    OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][9]_srl32
+  -------------------------------------------------------------------
+                         required time                         -1.087    
+                         arrival time                           1.142    
+  -------------------------------------------------------------------
+                         slack                                  0.055    
+
+Slack (MET) :             0.057ns  (arrival time - required time)
+  Source:                 OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg12_reg[19]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][2][3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.378ns  (logic 0.141ns (37.315%)  route 0.237ns (62.685%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.258ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.181ns
+    Source Clock Delay      (SCD):    0.888ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        0.552     0.888    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X47Y86         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg12_reg[19]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X47Y86         FDRE (Prop_fdre_C_Q)         0.141     1.029 r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg12_reg[19]/Q
+                         net (fo=2, routed)           0.237     1.265    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg12_reg_n_0_[19]
+    SLICE_X50Y85         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][2][3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    OLED_LED_BUTTON_design_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2288, routed)        0.815     1.181    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X50Y85         FDRE                                         r  OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][2][3]/C
+                         clock pessimism             -0.035     1.146    
+    SLICE_X50Y85         FDRE (Hold_fdre_C_D)         0.063     1.209    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][2][3]
+  -------------------------------------------------------------------
+                         required time                         -1.209    
+                         arrival time                           1.265    
+  -------------------------------------------------------------------
+                         slack                                  0.057    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_fpga_0
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { OLED_LED_BUTTON_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0] }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location        Pin
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB18_X2Y26    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/CHAR_LIB_COMP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/CLKARDCLK
+Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.576         10.000      7.424      RAMB18_X2Y26    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/CHAR_LIB_COMP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/CLKBWRCLK
+Min Period        n/a     BUFG/I              n/a            2.155         10.000      7.845      BUFGCTRL_X0Y16  OLED_LED_BUTTON_design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/I
+Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X42Y91    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[0][3][6]/C
+Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X41Y93    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[0][3][7]/C
+Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X41Y81    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[0][4][0]/C
+Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X50Y79    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[0][4][1]/C
+Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X37Y78    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[0][4][2]/C
+Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X45Y77    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[0][4][3]/C
+Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X46Y78    OLED_LED_BUTTON_design_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[0][4][4]/C
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X34Y106   OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][0]_srl4/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X42Y103   OLED_LED_BUTTON_design_i/rst_ps7_0_100M/U0/EXT_LPF/POR_SRL_I/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X34Y106   OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][1]_srl4/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X34Y106   OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][2]_srl4/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X34Y106   OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][3]_srl4/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X34Y106   OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][0]_srl4/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X26Y101   OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][10]_srl4/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X26Y101   OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][11]_srl4/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X26Y101   OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][12]_srl4/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X26Y101   OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][13]_srl4/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X26Y106   OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][16]_srl4/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X26Y106   OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][17]_srl4/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X26Y106   OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][18]_srl4/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X26Y106   OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][19]_srl4/CLK
+High Pulse Width  Slow    SRLC32E/CLK         n/a            0.980         5.000       4.020      SLICE_X32Y93    OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][22]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK         n/a            0.980         5.000       4.020      SLICE_X32Y93    OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][25]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK         n/a            0.980         5.000       4.020      SLICE_X34Y93    OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][26]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK         n/a            0.980         5.000       4.020      SLICE_X32Y93    OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][27]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK         n/a            0.980         5.000       4.020      SLICE_X32Y93    OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][29]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK         n/a            0.980         5.000       4.020      SLICE_X34Y93    OLED_LED_BUTTON_design_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][30]_srl32/CLK
+
+
+

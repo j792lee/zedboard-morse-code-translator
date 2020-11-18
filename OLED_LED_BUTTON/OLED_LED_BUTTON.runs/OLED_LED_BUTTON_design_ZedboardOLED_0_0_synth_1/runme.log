@@ -1,0 +1,734 @@
+
+*** Running vivado
+    with args -log OLED_LED_BUTTON_design_ZedboardOLED_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source OLED_LED_BUTTON_design_ZedboardOLED_0_0.tcl
+
+
+****** Vivado v2019.2.1 (64-bit)
+  **** SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+  **** IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source OLED_LED_BUTTON_design_ZedboardOLED_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/justin/ips/ZedboardOLED-v1.0-IP-master/tamu.edu_user_ZedboardOLED_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.2/data/ip'.
+Command: synth_design -top OLED_LED_BUTTON_design_ZedboardOLED_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16113 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 2003.566 ; gain = 203.715 ; free physical = 5305 ; free virtual = 9441
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'OLED_LED_BUTTON_design_ZedboardOLED_0_0' [/home/justin/vivado_projects/OLED_LED_BUTTON/OLED_LED_BUTTON.srcs/sources_1/bd/OLED_LED_BUTTON_design/ip/OLED_LED_BUTTON_design_ZedboardOLED_0_0/synth/OLED_LED_BUTTON_design_ZedboardOLED_0_0.v:56]
+INFO: [Synth 8-6157] synthesizing module 'ZedboardOLED_v1_0' [/home/justin/vivado_projects/OLED_LED_BUTTON/OLED_LED_BUTTON.srcs/sources_1/bd/OLED_LED_BUTTON_design/ipshared/a375/hdl/ZedboardOLED_v1_0.v:19]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ZedboardOLED_v1_0_S00_AXI' [/home/justin/vivado_projects/OLED_LED_BUTTON/OLED_LED_BUTTON.srcs/sources_1/bd/OLED_LED_BUTTON_design/ipshared/a375/hdl/ZedboardOLED_v1_0_S00_AXI.v:21]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'SpiCtrl' [/home/justin/vivado_projects/OLED_LED_BUTTON/OLED_LED_BUTTON.srcs/sources_1/bd/OLED_LED_BUTTON_design/ipshared/a375/src/SpiCtrl.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'SpiCtrl' (1#1) [/home/justin/vivado_projects/OLED_LED_BUTTON/OLED_LED_BUTTON.srcs/sources_1/bd/OLED_LED_BUTTON_design/ipshared/a375/src/SpiCtrl.v:20]
+INFO: [Synth 8-6157] synthesizing module 'Delay' [/home/justin/vivado_projects/OLED_LED_BUTTON/OLED_LED_BUTTON.srcs/sources_1/bd/OLED_LED_BUTTON_design/ipshared/a375/src/Delay.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'Delay' (2#1) [/home/justin/vivado_projects/OLED_LED_BUTTON/OLED_LED_BUTTON.srcs/sources_1/bd/OLED_LED_BUTTON_design/ipshared/a375/src/Delay.v:19]
+INFO: [Synth 8-638] synthesizing module 'charLib' [/home/justin/vivado_projects/OLED_LED_BUTTON/OLED_LED_BUTTON.srcs/sources_1/bd/OLED_LED_BUTTON_design/ip/OLED_LED_BUTTON_design_ZedboardOLED_0_0/src/charLib/synth/charLib.vhd:67]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: charLib.mif - type: string 
+	Parameter C_INIT_FILE bound to: charLib.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 8 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 8 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 2048 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 2048 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 11 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 8 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 8 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 2048 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 2048 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 11 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter C_READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     1.2196 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_4' declared at '/home/justin/vivado_projects/OLED_LED_BUTTON/OLED_LED_BUTTON.srcs/sources_1/bd/OLED_LED_BUTTON_design/ipshared/2985/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_4' [/home/justin/vivado_projects/OLED_LED_BUTTON/OLED_LED_BUTTON.srcs/sources_1/bd/OLED_LED_BUTTON_design/ip/OLED_LED_BUTTON_design_ZedboardOLED_0_0/src/charLib/synth/charLib.vhd:230]
+INFO: [Synth 8-256] done synthesizing module 'charLib' (11#1) [/home/justin/vivado_projects/OLED_LED_BUTTON/OLED_LED_BUTTON.srcs/sources_1/bd/OLED_LED_BUTTON_design/ip/OLED_LED_BUTTON_design_ZedboardOLED_0_0/src/charLib/synth/charLib.vhd:67]
+WARNING: [Synth 8-5856] 3D RAM current_screen_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-6155] done synthesizing module 'ZedboardOLED_v1_0_S00_AXI' (12#1) [/home/justin/vivado_projects/OLED_LED_BUTTON/OLED_LED_BUTTON.srcs/sources_1/bd/OLED_LED_BUTTON_design/ipshared/a375/hdl/ZedboardOLED_v1_0_S00_AXI.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ZedboardOLED_v1_0' (13#1) [/home/justin/vivado_projects/OLED_LED_BUTTON/OLED_LED_BUTTON.srcs/sources_1/bd/OLED_LED_BUTTON_design/ipshared/a375/hdl/ZedboardOLED_v1_0.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'OLED_LED_BUTTON_design_ZedboardOLED_0_0' (14#1) [/home/justin/vivado_projects/OLED_LED_BUTTON/OLED_LED_BUTTON.srcs/sources_1/bd/OLED_LED_BUTTON_design/ip/OLED_LED_BUTTON_design_ZedboardOLED_0_0/synth/OLED_LED_BUTTON_design_ZedboardOLED_0_0.v:56]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port CLKB
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[7]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[6]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[5]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[4]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[3]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[2]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[1]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[0]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port SBITERR_I
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DBITERR_I
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[10]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[9]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[8]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[7]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[6]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[5]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[4]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[3]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[2]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[1]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port CLKB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ENB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port REGCEB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port WEB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port SLEEP
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ram_rstram_b
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ram_rstreg_b
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port REGCEA[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port REGCEB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port RSTA
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ENA
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port REGCEA
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port WEA[0]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINA[7]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINA[6]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINA[5]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINA[4]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINA[3]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINA[2]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINA[1]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINA[0]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port CLKB
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port RSTB
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ENB
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port REGCEB
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port WEB[0]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[10]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[9]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[8]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[7]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[6]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[5]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[4]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[3]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[2]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[1]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[0]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINB[7]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINB[6]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINB[5]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINB[4]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINB[3]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINB[2]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINB[1]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINB[0]
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AClk
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWID[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWID[2]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:32 ; elapsed = 00:00:42 . Memory (MB): peak = 2231.246 ; gain = 431.395 ; free physical = 5296 ; free virtual = 9412
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:43 . Memory (MB): peak = 2231.246 ; gain = 431.395 ; free physical = 5305 ; free virtual = 9420
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:43 . Memory (MB): peak = 2231.246 ; gain = 431.395 ; free physical = 5305 ; free virtual = 9420
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2231.246 ; gain = 0.000 ; free physical = 5292 ; free virtual = 9407
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/justin/vivado_projects/OLED_LED_BUTTON/OLED_LED_BUTTON.runs/OLED_LED_BUTTON_design_ZedboardOLED_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/justin/vivado_projects/OLED_LED_BUTTON/OLED_LED_BUTTON.runs/OLED_LED_BUTTON_design_ZedboardOLED_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2359.090 ; gain = 0.000 ; free physical = 5195 ; free virtual = 9316
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2359.090 ; gain = 0.000 ; free physical = 5194 ; free virtual = 9315
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:39 ; elapsed = 00:00:50 . Memory (MB): peak = 2359.090 ; gain = 559.238 ; free physical = 5294 ; free virtual = 9409
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:39 ; elapsed = 00:00:50 . Memory (MB): peak = 2359.090 ; gain = 559.238 ; free physical = 5294 ; free virtual = 9409
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst/ZedboardOLED_v1_0_S00_AXI_inst/CHAR_LIB_COMP. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:50 . Memory (MB): peak = 2359.090 ; gain = 559.238 ; free physical = 5294 ; free virtual = 9409
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'SpiCtrl'
+INFO: [Synth 8-5545] ROM "current_state" won't be mapped to RAM because address size (40) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'Delay'
+INFO: [Synth 8-5545] ROM "current_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "current_screen" won't be mapped to RAM because address size (144) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "temp_res" won't be mapped to RAM because address size (144) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "temp_vdd" won't be mapped to RAM because address size (144) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "temp_vbat" won't be mapped to RAM because address size (144) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "temp_char" won't be mapped to RAM because address size (144) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "temp_addr" won't be mapped to RAM because address size (144) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "temp_spi_en" won't be mapped to RAM because address size (144) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "temp_delay_en" won't be mapped to RAM because address size (144) is larger than maximum supported(25)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 | 0000000001001001011001000110110001100101
+                 iSTATE0 |                              010 | 0000000001010011011001010110111001100100
+                 iSTATE1 |                              100 | 0000000001000100011011110110111001100101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'SpiCtrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 | 01001001011001000110110001100101
+                 iSTATE0 |                              010 | 01001000011011110110110001100100
+                 iSTATE1 |                              100 | 01000100011011110110111001100101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'Delay'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:34 ; elapsed = 00:01:46 . Memory (MB): peak = 2377.090 ; gain = 577.238 ; free physical = 5213 ; free virtual = 9362
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	              143 Bit    Registers := 1     
+	              112 Bit    Registers := 1     
+	               96 Bit    Registers := 1     
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 18    
+	               17 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 67    
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	  19 Input    143 Bit        Muxes := 1     
+	   2 Input    143 Bit        Muxes := 1     
+	  51 Input    112 Bit        Muxes := 1     
+	   2 Input    103 Bit        Muxes := 1     
+	   2 Input     95 Bit        Muxes := 2     
+	   2 Input     87 Bit        Muxes := 1     
+	   4 Input     87 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 17    
+	  18 Input     32 Bit        Muxes := 17    
+	   2 Input     17 Bit        Muxes := 1     
+	  51 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	  51 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 16    
+	  51 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 31    
+	  51 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module SpiCtrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+Module Delay 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ZedboardOLED_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	              143 Bit    Registers := 1     
+	              112 Bit    Registers := 1     
+	               96 Bit    Registers := 1     
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 18    
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 66    
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	  19 Input    143 Bit        Muxes := 1     
+	   2 Input    143 Bit        Muxes := 1     
+	  51 Input    112 Bit        Muxes := 1     
+	   2 Input    103 Bit        Muxes := 1     
+	   2 Input     95 Bit        Muxes := 2     
+	   2 Input     87 Bit        Muxes := 1     
+	   4 Input     87 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 17    
+	  18 Input     32 Bit        Muxes := 17    
+	  51 Input     11 Bit        Muxes := 1     
+	  51 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 16    
+	  51 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 23    
+	  51 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "temp_char" won't be mapped to RAM because address size (103) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "temp_res" won't be mapped to RAM because address size (103) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "temp_vbat" won't be mapped to RAM because address size (103) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "temp_vdd" won't be mapped to RAM because address size (103) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "temp_spi_en" won't be mapped to RAM because address size (103) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "current_screen" won't be mapped to RAM because address size (103) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "temp_addr" won't be mapped to RAM because address size (103) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "temp_delay_en" won't be mapped to RAM because address size (103) is larger than maximum supported(25)
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[37]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[37]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[38]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[36]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[36]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[38]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[34]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[34]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[39]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[32]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[32]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[38]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[21]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[21]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[38]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[94]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[93]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[92]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[91]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[90]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[89]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[88]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[87]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[41]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[85]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[83]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[3]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[3]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[39]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[7]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[7]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[39]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[79]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[15]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[15]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[39]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[76]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[75]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[74]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[73]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[71]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[19]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[19]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[39]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[68]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[23]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[23]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[39]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[66]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[65]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[63]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[25]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[25]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[39]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[31]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[31]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[39]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[59]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[57]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[56]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[55]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[53]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[35]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[35]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[39]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[51]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[50]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[47]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[39]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[39]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[33]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[44]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[14]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[14]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[38]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[30]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[30]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[38]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[24]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[24]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[38]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[6]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[6]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[38]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[22]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[22]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[38]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[81]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[64]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[84]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[86]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[82]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[61]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[62]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[78]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[80]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[69]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[67]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[72]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[77]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[70]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[9]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[9]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[38]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[49]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[54]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[58]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[60]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[5]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[5]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[38]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[2]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[2]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[38]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[1]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[1]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[33]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[4]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[4]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[38]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[8]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[8]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[38]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[0]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_char_state_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[0]' (FDE) to 'inst/ZedboardOLED_v1_0_S00_AXI_inst/after_update_state_reg[33]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst/ZedboardOLED_v1_0_S00_AXI_inst /\after_char_state_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/ZedboardOLED_v1_0_S00_AXI_inst /\after_char_state_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/ZedboardOLED_v1_0_S00_AXI_inst /\after_update_state_reg[17] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst/ZedboardOLED_v1_0_S00_AXI_inst /\after_update_state_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/ZedboardOLED_v1_0_S00_AXI_inst /\after_state_reg[95] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/ZedboardOLED_v1_0_S00_AXI_inst /\after_page_state_reg[42] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/ZedboardOLED_v1_0_S00_AXI_inst /\current_state_reg[143] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/ZedboardOLED_v1_0_S00_AXI_inst /\axi_rresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/ZedboardOLED_v1_0_S00_AXI_inst /\axi_bresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/ZedboardOLED_v1_0_S00_AXI_inst /\after_state_reg[39] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst/ZedboardOLED_v1_0_S00_AXI_inst /\after_state_reg[38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/ZedboardOLED_v1_0_S00_AXI_inst /\after_page_state_reg[17] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst/ZedboardOLED_v1_0_S00_AXI_inst /\after_page_state_reg[13] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:41 ; elapsed = 00:02:55 . Memory (MB): peak = 2386.863 ; gain = 587.012 ; free physical = 5253 ; free virtual = 9396
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:46 ; elapsed = 00:03:02 . Memory (MB): peak = 2386.863 ; gain = 587.012 ; free physical = 5139 ; free virtual = 9279
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:47 ; elapsed = 00:03:03 . Memory (MB): peak = 2386.863 ; gain = 587.012 ; free physical = 5136 ; free virtual = 9278
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:49 ; elapsed = 00:03:04 . Memory (MB): peak = 2386.863 ; gain = 587.012 ; free physical = 5127 ; free virtual = 9273
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:52 ; elapsed = 00:03:07 . Memory (MB): peak = 2386.863 ; gain = 587.012 ; free physical = 5141 ; free virtual = 9286
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:52 ; elapsed = 00:03:07 . Memory (MB): peak = 2386.863 ; gain = 587.012 ; free physical = 5141 ; free virtual = 9286
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:52 ; elapsed = 00:03:08 . Memory (MB): peak = 2386.863 ; gain = 587.012 ; free physical = 5141 ; free virtual = 9286
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:52 ; elapsed = 00:03:08 . Memory (MB): peak = 2386.863 ; gain = 587.012 ; free physical = 5141 ; free virtual = 9286
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:52 ; elapsed = 00:03:08 . Memory (MB): peak = 2386.863 ; gain = 587.012 ; free physical = 5141 ; free virtual = 9286
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:52 ; elapsed = 00:03:08 . Memory (MB): peak = 2386.863 ; gain = 587.012 ; free physical = 5141 ; free virtual = 9286
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    20|
+|2     |LUT1     |    12|
+|3     |LUT2     |   267|
+|4     |LUT3     |   175|
+|5     |LUT4     |   391|
+|6     |LUT5     |   358|
+|7     |LUT6     |  1286|
+|8     |MUXF7    |   113|
+|9     |MUXF8    |    32|
+|10    |RAMB18E1 |     1|
+|11    |FDRE     |  1305|
+|12    |FDSE     |    78|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------------------------------------------------+------------------------------+------+
+|      |Instance                                           |Module                        |Cells |
++------+---------------------------------------------------+------------------------------+------+
+|1     |top                                                |                              |  4038|
+|2     |  inst                                             |ZedboardOLED_v1_0             |  4038|
+|3     |    ZedboardOLED_v1_0_S00_AXI_inst                 |ZedboardOLED_v1_0_S00_AXI     |  4029|
+|4     |      CHAR_LIB_COMP                                |charLib                       |     1|
+|5     |        U0                                         |blk_mem_gen_v8_4_4            |     1|
+|6     |          inst_blk_mem_gen                         |blk_mem_gen_v8_4_4_synth      |     1|
+|7     |            \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top               |     1|
+|8     |              \valid.cstr                          |blk_mem_gen_generic_cstr      |     1|
+|9     |                \ramloop[0].ram.r                  |blk_mem_gen_prim_width        |     1|
+|10    |                  \prim_init.ram                   |blk_mem_gen_prim_wrapper_init |     1|
+|11    |      DELAY_COMP                                   |Delay                         |   113|
+|12    |      SPI_COMP                                     |SpiCtrl                       |    49|
++------+---------------------------------------------------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:52 ; elapsed = 00:03:08 . Memory (MB): peak = 2386.863 ; gain = 587.012 ; free physical = 5141 ; free virtual = 9286
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 165 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:50 ; elapsed = 00:03:05 . Memory (MB): peak = 2386.863 ; gain = 459.168 ; free physical = 5194 ; free virtual = 9339
+Synthesis Optimization Complete : Time (s): cpu = 00:02:52 ; elapsed = 00:03:08 . Memory (MB): peak = 2386.871 ; gain = 587.012 ; free physical = 5194 ; free virtual = 9339
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2386.871 ; gain = 0.000 ; free physical = 5264 ; free virtual = 9408
+INFO: [Netlist 29-17] Analyzing 166 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'OLED_LED_BUTTON_design_ZedboardOLED_0_0' is not ideal for floorplanning, since the cellview 'ZedboardOLED_v1_0_S00_AXI' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2418.879 ; gain = 0.000 ; free physical = 5209 ; free virtual = 9352
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+166 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:59 ; elapsed = 00:03:17 . Memory (MB): peak = 2418.879 ; gain = 867.531 ; free physical = 5343 ; free virtual = 9487
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2418.879 ; gain = 0.000 ; free physical = 5343 ; free virtual = 9487
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/justin/vivado_projects/OLED_LED_BUTTON/OLED_LED_BUTTON.runs/OLED_LED_BUTTON_design_ZedboardOLED_0_0_synth_1/OLED_LED_BUTTON_design_ZedboardOLED_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP OLED_LED_BUTTON_design_ZedboardOLED_0_0, cache-ID = 1185b23caad48455
+INFO: [Coretcl 2-1174] Renamed 11 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2442.891 ; gain = 0.000 ; free physical = 5340 ; free virtual = 9489
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/justin/vivado_projects/OLED_LED_BUTTON/OLED_LED_BUTTON.runs/OLED_LED_BUTTON_design_ZedboardOLED_0_0_synth_1/OLED_LED_BUTTON_design_ZedboardOLED_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file OLED_LED_BUTTON_design_ZedboardOLED_0_0_utilization_synth.rpt -pb OLED_LED_BUTTON_design_ZedboardOLED_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 13 21:29:44 2020...

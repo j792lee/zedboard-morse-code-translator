@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2.1 (64-bit)
+# SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+# IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+# Start of session at: Wed May 13 21:30:34 2020
+# Process ID: 16906
+# Current directory: /home/justin/vivado_projects/OLED_LED_BUTTON/OLED_LED_BUTTON.runs/impl_1
+# Command line: vivado -log OLED_LED_BUTTON_design_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source OLED_LED_BUTTON_design_wrapper.tcl -notrace
+# Log file: /home/justin/vivado_projects/OLED_LED_BUTTON/OLED_LED_BUTTON.runs/impl_1/OLED_LED_BUTTON_design_wrapper.vdi
+# Journal file: /home/justin/vivado_projects/OLED_LED_BUTTON/OLED_LED_BUTTON.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source OLED_LED_BUTTON_design_wrapper.tcl -notrace
